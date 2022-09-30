@@ -1,6 +1,5 @@
-"""
-Faça um Programa que converta metros para centímetros.
-"""
+# Faça um Programa que converta metros para centímetros.
+
 metro = float(input('Metros: '))
 cent = metro / 100
 
