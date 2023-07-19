@@ -1,4 +1,6 @@
-# Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+"""
+Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+"""
 
 lado_1 = float(input('Lado 1: '))
 lado_2 = float(input('Lado 2: '))
