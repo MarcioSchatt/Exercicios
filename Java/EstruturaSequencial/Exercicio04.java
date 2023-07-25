@@ -2,7 +2,7 @@
 package EstruturaSequencial;
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio04 {
     public static void main(String[] args) {
         Scanner bimestral = new Scanner(System.in);
 
