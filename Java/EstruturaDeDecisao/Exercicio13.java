@@ -35,8 +35,8 @@ public class Exercicio13 {
                 break;
             default:
                 diaSemana = "Valor inválido";
-                System.out.println(diaSemana);
-                System.exit(numeroDia);
+                scanner.close();
+                return;
         }
 
         System.out.println("Dia correspondente da semana: " + diaSemana);
