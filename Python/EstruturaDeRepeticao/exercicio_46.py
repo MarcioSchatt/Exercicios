@@ -23,4 +23,32 @@ Média dos demais saltos: 5.9 m
 Resultado final:
 Rodrigo Curvêllo: 5.9 m
 """
+def calcular_media_saltos(saltos):
+    melhor_salto = max(saltos)
+    pior_salto = min(saltos)
+    saltos.remove(melhor_salto)
+    saltos.remove(pior_salto)
+    return sum(saltos) / len(saltos)
 
+while True:
+    nome_atleta = input("Nome do Atleta: ")
+    if nome_atleta == "":
+        break
+
+    saltos_atleta = []
+    for i in range(1, 6):
+        distancia = float(input(f"{i}º Salto (m): "))
+        saltos_atleta.append(distancia)
+
+    media_saltos = calcular_media_saltos(saltos_atleta)
+
+    print(f"\nAtleta: {nome_atleta}")
+    for i, salto in enumerate(saltos_atleta, start=1):
+        print(f"{i}º Salto: {salto} m")
+
+    print(f"\nMelhor salto: {max(saltos_atleta)} m")
+    print(f"Pior salto: {min(saltos_atleta)} m")
+    print(f"Média dos demais saltos: {media_saltos:.1f} m")
+
+    print(f"\nResultado final:")
+    print(f"{nome_atleta}: {media_saltos:.1f} m\n")

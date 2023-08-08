@@ -21,4 +21,24 @@ Melhor nota: 9.9
 Pior nota: 7.5
 Média: 9,04
 """
+def calcular_media_notas(notas):
+    melhor_nota = max(notas)
+    pior_nota = min(notas)
+    notas.remove(melhor_nota)
+    notas.remove(pior_nota)
+    return sum(notas) / len(notas)
 
+nome_ginasta = input("Nome do Ginasta: ")
+
+notas_ginasta = []
+for i in range(1, 8):
+    nota = float(input(f"Nota {i}: "))
+    notas_ginasta.append(nota)
+
+media_notas = calcular_media_notas(notas_ginasta)
+
+print(f"\nResultado final:")
+print(f"Atleta: {nome_ginasta}")
+print(f"Melhor nota: {max(notas_ginasta)}")
+print(f"Pior nota: {min(notas_ginasta)}")
+print(f"Média: {media_notas:.1f}")
