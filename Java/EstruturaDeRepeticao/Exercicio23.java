@@ -1,8 +1,8 @@
-// Altere o programa de cálculo do fatorial, permitindo ao usuário calcular o fatorial várias vezes e limitando o fatorial a números inteiros positivos e menores que 16.
+// Faça um programa que mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. O programa deverá mostrar também o número de divisões que ele executou para encontrar os números primos.Serão avaliados o funcionamento, o estilo e o número de testes (divisões) executados.
 package EstruturaDeRepeticao;
 import java.util.Scanner;
 
-public class Exercicio20 {
+public class Exercicio23 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,7 +31,7 @@ public class Exercicio20 {
         } while (true);
 
         System.out.println("Programa encerrado.");
-
+        
         scanner.close();
     }
 }
