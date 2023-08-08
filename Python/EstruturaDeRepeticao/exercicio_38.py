@@ -9,10 +9,3 @@ Faça um programa que determine o salário atual desse funcionário.
 Após concluir isto, altere o programa permitindo que o usuário digite o salário inicial do funcionário.
 """
 
-preco_pao = float(input("Digite o preço do pão: R$ "))
-
-print("Panificadora Pão de Ontem - Tabela de preços")
-
-for i in range(1, 51):
-    preco_total = i * preco_pao
-    print(f"{i:2} - R$ {preco_total:.2f}")

@@ -17,10 +17,3 @@ R$ 1.100,00     100             3                       R$    366,00
 R$ 1.150,00     150             6                       R$    191,67
 """
 
-preco_pao = float(input("Digite o preço do pão: R$ "))
-
-print("Panificadora Pão de Ontem - Tabela de preços")
-
-for i in range(1, 51):
-    preco_total = i * preco_pao
-    print(f"{i:2} - R$ {preco_total:.2f}")

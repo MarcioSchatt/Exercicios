@@ -13,10 +13,3 @@ Faça um programa que leia o código dos itens pedidos e as quantidades desejada
 Calcule e mostre o valor a ser pago por item (preço * quantidade) e o total geral do pedido. Considere que o cliente deve informar quando o pedido deve ser encerrado.
 """
 
-preco_pao = float(input("Digite o preço do pão: R$ "))
-
-print("Panificadora Pão de Ontem - Tabela de preços")
-
-for i in range(1, 51):
-    preco_total = i * preco_pao
-    print(f"{i:2} - R$ {preco_total:.2f}")

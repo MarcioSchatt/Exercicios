@@ -5,10 +5,3 @@ O final da digitação de dados deve ser dada quando o usuário digitar 0 (zero)
 Ao encerrar o programa também deve ser informados os códigos e valores do clente mais alto, do mais baixo, do mais gordo e do mais magro, além da média das alturas e dos pesos dos clientes
 """
 
-preco_pao = float(input("Digite o preço do pão: R$ "))
-
-print("Panificadora Pão de Ontem - Tabela de preços")
-
-for i in range(1, 51):
-    preco_total = i * preco_pao
-    print(f"{i:2} - R$ {preco_total:.2f}")
