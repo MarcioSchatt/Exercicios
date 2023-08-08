@@ -9,8 +9,8 @@ Faça um programa que determine o salário atual desse funcionário.
 Após concluir isto, altere o programa permitindo que o usuário digite o salário inicial do funcionário.
 """
 
-# Salário inicial em 1995
-salario_inicial = 1000.00
+# Salário inicial informado pelo usuário
+salario_inicial = float(input("Digite o salário inicial do funcionário: R$ "))
 
 # Aumento em 1996
 aumento_1996 = salario_inicial * 0.015

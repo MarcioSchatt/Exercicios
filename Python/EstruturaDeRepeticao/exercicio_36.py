@@ -13,3 +13,16 @@ Vou montar a tabuada de 5 começando em 4 e terminando em 7:
 Obs: Você deve verificar se o usuário não digitou o final menor que o inicial.
 """
 
+numero_tabuada = int(input("Montar a tabuada de: "))
+inicio_tabuada = int(input("Começar por: "))
+fim_tabuada = int(input("Terminar em: "))
+
+while fim_tabuada < inicio_tabuada:
+    print("O valor final deve ser maior ou igual ao valor inicial.")
+    fim_tabuada = int(input("Terminar em: "))
+
+print(f"Vou montar a tabuada de {numero_tabuada} começando em {inicio_tabuada} e terminando em {fim_tabuada}:")
+
+for i in range(inicio_tabuada, fim_tabuada + 1):
+    resultado = numero_tabuada * i
+    print(f"{numero_tabuada} X {i} = {resultado}")
